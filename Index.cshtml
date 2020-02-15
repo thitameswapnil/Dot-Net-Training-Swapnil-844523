@@ -1,0 +1,100 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+
+<body>
+    <form method="post">
+
+            <div style="width:100%;height:200px;background-color:pink">
+                <table >
+                    <tr>
+                        <td>
+                    <img src="~/abc.jpg" alt="img" height="190" width="200" />
+                            </td>
+                        <td>
+                    <h1 align="right">TRM</h1>
+                            </td>
+                        </tr>
+                    </table>
+</div>
+            <div style="width:20%;height:740px;background-color:grey">
+                <table>
+                    <tr>
+                        <td>
+                            @Html.ActionLink("Create new User", "Index", "ABC")
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            @Html.ActionLink("Create new Trainer", "Index", "ABC")
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            @Html.ActionLink("Create new Resource", "Index", "ABC")
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+            <div style="width:1180px;position:absolute;left:250px;top:208px;background-color:silver">
+                <h1 style="text-align:center">New Training Request</h1>
+                <table align="center" cellpadding="25">
+
+                    <tr>
+                        <td>
+                            Request Name:
+                        </td>
+                    <tr>
+
+
+                        <td>
+                            <input type="text" id="rn " name="rn" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Skill:
+                        </td>
+                    <tr>
+                        <td>
+                            <input type="text" id="sk" name="sk" />
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            Start Date:
+                        </td>
+                    <tr>
+                        <td>
+                            <input type="date" id="sd " name="sd" />
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            End Date:
+                        </td>
+                    <tr>
+                        <td>
+                            <input type="date" id="ed " name="ed" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="submit">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+</form>
+</body>
+</html>
